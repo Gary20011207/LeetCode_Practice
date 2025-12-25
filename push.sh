@@ -8,8 +8,10 @@ current_date=$(date +"%Y/%m/%d")
 if [ ! -d ".git" ]; then
     echo "Initializing git repository..."
     git init
-    git branch -M main
 fi
+
+# Ensure branch is named main
+git branch -M main
 
 # Create .gitignore if not exists
 if [ ! -f ".gitignore" ]; then
