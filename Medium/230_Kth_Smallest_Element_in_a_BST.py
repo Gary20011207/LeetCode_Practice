@@ -23,5 +23,5 @@ class Solution:
                 return curr.val
             # Move to the right subtree
             curr = curr.right
-
+        # Fallback
         return -1
