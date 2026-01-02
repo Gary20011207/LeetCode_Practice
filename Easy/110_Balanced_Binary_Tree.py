@@ -6,6 +6,7 @@ class TreeNode:
         self.right = right
 class Solution:
     def isBalanced(self, root: Optional[TreeNode]) -> bool:
+        # Returns the height of the tree if balanced, else returns -1 (Depth First Search)
         def getHeight(root):
             # Base case
             if not root:
